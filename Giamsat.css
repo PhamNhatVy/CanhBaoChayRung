@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+#background {
+    background: url("background1.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 999; */
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.real-day-time {
+    width: 100%;
+    box-sizing: border-box;
+    margin:auto;
+    margin-top: 40px ;
+    background-size:100%;
+    border-radius: 15px;
+}
+
+.date{
+    width: 100%;
+}
+
+.date, #current-time {
+    font-size: 30px;
+    color: rgb(40, 255, 233);
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav{
+    height: 70px;
+    background-color: rgba(216, 178, 120, 0.499);
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    margin-top: 100px;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    width: 350px;
+    height: 450px;
+}
+
+.box5 {
+    background-color: white;
+    width: 100%;
+}
+
+.sensors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sensor {
+    margin-bottom: 20px;
+}
+
+.sensor .name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sensor .data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sensor .data img {
+    width: 100px;
+    height: 100px;
+    /* margin-right: 10px; */
+}
+
+.time1,
+.time2,
+.time3,
+.time4 {
+    font-size: 1.3em;
+}
+
+.real-day-time {
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+nav a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h1{
+    color: #fff;
+    font-size: 1.5em;
+}
+.footer-content h1 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-section.about {
+    flex-basis: 30%;
+}
+
+.footer-section.links {
+    flex-basis: 20%;
+}
+
+.footer-section.contact-form {
+    flex-basis: 40%;
+}
+
+.footer-section h2 {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.footer-section ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-section ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.contact .btn {
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.socials a {
+    margin-right: 5px;
+    color: #fff;
+    font-size: 1.3em;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #777;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #777;
+}
+
+.btn--giamsat {
+    background-color: #E63946;
+}
+
+.btn--bieudo {
+    background-color: #457B9D;
+}
+
+.btn--bang {
+    background-color: #ffb22cdb;
+}
+
+.temp1,
+.temp2,
+.temp3,
+.cam1{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.humi1,
+.humi2,
+.humi3{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.date span {
+    margin-right: 5px;
+}
+
+#dayname {
+    text-transform: uppercase;
+}
+
+#current-time {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+    table th, table td {
+    border: 1px solid #ddd;
+    color: #000000;
+    padding: 8px;
+    text-align: center;
+    }
+    
+    table th {
+    background-color: #3fe08a90;
+    }
+    
+    table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+    }
+    .view{
+        width:60% ;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+    .charts{
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        border-radius: 15px;
+    }
+    .chart-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .chart-container {
+    width: 100%;
+    max-width: 800px; /* Tuỳ chỉnh kích thước container của biểu đồ */
+    height: 300px; /* Tuỳ chỉnh kích thước container của biểu đồ */
+    margin: auto;
+    color: #ffffff;
+    }
+
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header .logo {
+        font-size: 1.5em;
+    }
+
+    .real-day-time {
+        font-size: 1em;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    footer .footer-section.about,
+    .footer-section.links,
+    .footer-section.contact-form {
+        flex-basis: 100%;
+    }
+}
